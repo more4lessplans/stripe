@@ -113,6 +113,14 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+
+ .line{
+width: 112px;
+height: 47px;
+border-bottom: 1px solid black;
+position: absolute;
+}
+
 /* Typography */
 
 	html {
@@ -1803,6 +1811,13 @@ input, select, textarea {
 			padding: 4rem;
 		}
 
+
+.box .content4 {
+			padding: 4rem;
+		}
+
+
+
 			.box .content > *:last-child {
 				margin: 0;
 			}
@@ -1898,6 +1913,96 @@ input, select, textarea {
 				}
 
 		}
+
+
+
+
+
+
+
+
+/*teset */
+
+.box.columns2 {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-align-items: bottom;
+			-webkit-align-items: bottom;
+			-ms-align-items: bottom;
+			align-items: bottom; 
+			-moz-justify-content: bottom;
+			-webkit-justify-content: bottom;
+			-ms-justify-content: bottom;
+			justify-content: bottom;
+		
+			
+			
+			
+		}
+
+			.box.columns2 .content {
+				width: 99%;
+			}
+
+			.box.columns2 .image {
+				width: 99%;
+			}
+
+		.box.contact2 {
+			margin: 0 auto;
+			width: 32rem;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.box.columns2 {
+				-moz-flex-wrap: wrap;
+				-webkit-flex-wrap: wrap;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+
+				.box.columns2 .content {
+					-moz-order: 2;
+					-webkit-order: 2;
+					-ms-order: 2;
+					order: 2;
+					width: 90%;
+				}
+
+				.box.columns2 .image {
+					-moz-order: 1;
+					-webkit-order: 1;
+					-ms-order: 1;
+					order: 1;
+					width: 100%;
+				}
+
+					.box.columns2 .image img {
+						max-height: 35rem;
+						object-fit: cover;
+					}
+
+			.box.contact2 {
+				width: 100%;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.box {
+				margin: 6rem 0;
+			}
+
+				.box .content {
+					padding: 2rem 1.5rem;
+				}
+
+		}
+
 
 /* Button */
 
@@ -2641,6 +2746,29 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* List */
 
