@@ -3517,6 +3517,16 @@ position: absolute;
 						border-top: 0;
 					}
 
+
+
+
+.title-link {
+    border: none !important;
+}
+
+
+
+
 		#menu .close {
 			text-decoration: none;
 			-moz-transition: color 0.2s ease-in-out;
