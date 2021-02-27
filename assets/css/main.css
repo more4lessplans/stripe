@@ -1876,10 +1876,10 @@ position: absolute;
 			}
 
 				.box.columns .content {
-					-moz-order: 2;
-					-webkit-order: 2;
-					-ms-order: 2;
-					order: 2;
+					-moz-order: 1;
+					-webkit-order: 1;
+					-ms-order: 1;
+					order: 1;
 					width: 100%;
 				}
 
@@ -1889,6 +1889,15 @@ position: absolute;
 					-ms-order: 1;
 					order: 1;
 					width: 100%;
+				}
+			
+			
+			.box.columns .align-center {
+					-moz-order: 2;
+					-webkit-order: 2;
+					-ms-order: 2;
+					order: 2;
+					
 				}
 
 					.box.columns .image img {
