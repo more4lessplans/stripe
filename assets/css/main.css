@@ -2063,7 +2063,7 @@ position: absolute;
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				background-color: rgba(234, 38, 84, 0.25);
+				background-color: #697170;
 			}
 
 		input[type="submit"].primary,
@@ -2082,7 +2082,7 @@ position: absolute;
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ec3d66;
+				background-color: #0C0C0C;
 				box-shadow: none;
 			}
 
@@ -2091,7 +2091,7 @@ position: absolute;
 				input[type="button"].primary:hover:active,
 				button.primary:hover:active,
 				.button.primary:hover:active {
-					background-color: #e11645;
+					background-color: #0C0C0C;
 				}
 
 		input[type="submit"].circle,
