@@ -65,18 +65,18 @@
 										<div class="box">
 											<div class="content">
 
-												<h2><strong>Select Your Network &nbsp;</strong></h2>
+												<h2><strong>Locking LTE Bands &nbsp;</strong></h2>
 
 												
 												<!-- Image -->
 											
-													<h4><strong>A Tutorial to Help You Lock a Specific Carrier's Towers</strong></h4>
-												
+													<h4><strong>A Tutorial to Help You Optimize Your Device for the Best Performance</strong></h4>
 												
 												
 													<br>
+													
 												
-												<h3><strong>1. Access The Admin Panel</strong></h3>
+											  <h3><strong>1. Access The Admin Panel</strong></h3>
 												<h4>◦ Open a web browser (we recommend Chrome, firefox) and visit http://192.168.8.1. You will be directed to the login page of the web Admin Panel.<BR>
 													◦ Login to the admin panel with password "admin" (You can change this password later in settings).</h4>
 												
@@ -98,8 +98,8 @@
 													<br>
 												
 											  <h3><strong>3. AT Command Page</strong></h3>
-												<h4>◦ Once you have navigated to the AT Command Page you will be able to begin configurating the network you would like your device to lock to. <br>
-													◦ By default, when you plug in the router, it is set to automatically select the network with the best signal. Sometimes the best signal does not give you optimal speeds.</h4>
+												<h4>◦ Once you have navigated to the AT Command Page you will be able to begin configurating the LTE band you would like your device to lock to. <br>
+													◦ By default, when you plug in the router, it is set to automatically select the network and LTE band with the best signal. Sometimes the best signal does not give you optimal speeds.</h4>
 												
 
 											
@@ -114,37 +114,52 @@
 												<br>
 													<br>
 												
-											  <h3><strong>4. Manually Select Network</strong></h3>
-												<h4>◦ You can customize many things by utilizing AT Commands. Feel free to use the shortcut dropdown to select a preset command and send it. <br>
-													◦ To manually lock your device to a specific carrier you will need to use one of the following manual commands: 
-													</h4>
-													<strong>Bell</strong>
-													<pre><code>AT+COPS=1,2,302610</code></pre>
-													<strong>Rogers</strong>
-														<pre><code>AT+COPS=1,2,302720</code></pre>
-													<strong>Telus</strong>
-														<pre><code>AT+COPS=1,2,302220</code></pre>
+											  <h3><strong>4. Manually Lock LTE Bands</strong></h3>
+												<h4> 
+													◦ To manually lock your device to a specific band you can use the shortcut dropdown menu option "Set band" </h4>
+													
+													<span class="image fit"><img src="images/SETBAND.jpg" alt="" /></span>
+													
+													<br>
+													<h4> 
+													◦ To specify what band you would like to lock to use the Band dropdown menu option. <br>
+													◦ For example: We will select Band 2 and send the command. </h4>
+													
+													<span class="image fit"><img src="images/BAND2.jpg" alt="" /></span>
+													<span class="image fit"><img src="images/SENDLOCK.jpg" alt="" /></span>
+													<br>
+													<h4>
+													◦ In some instances, it may be beneficial to have multiple bands locked so the router can automatically switch between them. Here are some common manual commands that can be used:  </h4>
+													
+													<pre><code>
+<strong>Bands:</strong>	                       <strong> AT Commands:	</strong>
+
+2+4	                        AT+QCFG="band",0,a,1	
+2+4+5	                        AT+QCFG="band",0,1a,1	
+2+4+12	                        AT+QCFG="band",0,80a,1	
+2+4+5+12                        AT+QCFG="band",0,81a,1	
+2+12	                        AT+QCFG="band",0,802,1	
+4+12	                        AT+QCFG="band",0,808,1	
+5+12	                        AT+QCFG="band",0,810,1	
+Reset to Default (All Bands)	AT+QCFG="band",0,2000000003300185a,1	
+
+</code></pre>
+													
 												
 												
-												
-												<h4>◦ You may need to send the command multiple or refresh the page to successfully send the command<br>
-													◦ If the requested network is not available you may get an error, either try again later or select a different network to get your internet connection back. <br><br>
-													<strong>◦ Here is how to veiw the current network you are connected to:</strong></h4>
+											  <h4>
+													<strong>◦ Here is how to veiw the current band you are connected to:</strong></h4>
 
 											
-												<span class="image fit"><img src="images/OPERATOR.jpg" alt="" /></span>
-													<span class="image fit"><img src="images/SENDOPERATOR.jpg" alt="" /></span>
-													<span class="image fit"><img src="images/CARRIERNAMES.jpg" alt="" /></span>
-													
+												<span class="image fit"><img src="images/1BAND.jpg" alt="" /></span>
+													<span class="image fit"><img src="images/2BAND.jpg" alt="" /></span>
+													<span class="image fit"><img src="images/3BAND.jpg" alt="" /></span>
 													
 													<br>
 												
 											<h4><strong>Further Customization: </strong>
 												<br>
-												<a href="lockband">Learn to Lock a Specific LTE Band</a></h4>
-												
-												
-											 
+												<a href="https://more4lessplans.ca/networkselection">Learn to Lock a Specific Carrier</a></h4>
 									</section>
 
 								<!-- Footer -->
